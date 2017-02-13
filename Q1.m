@@ -17,7 +17,7 @@ end
 disp(['The integral of (b) is ', num2str(mean(h))]);
 
 for i = 1:E
-    x = rand;   y = rand;
-    g(i) = exp(-x^2-y^2);
+    x = rand;	y = rand;
+    g(i) = exp(-(x+y)^2);
 end
 disp(['The integral of (c) is ', num2str(mean(g))]);
